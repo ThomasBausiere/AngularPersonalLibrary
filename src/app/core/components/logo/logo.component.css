@@ -1,0 +1,12 @@
+.logo {
+  width: 100%;
+  height: auto;
+  }
+
+  img.bg{
+  margin: 5px;
+
+    width: 100%;
+    height:auto;
+    max-width: 100px;
+  }

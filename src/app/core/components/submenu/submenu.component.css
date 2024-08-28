@@ -1,0 +1,110 @@
+
+@import url("../../../app.component.css/");
+
+@media only screen and (min-width: 767px) {
+  .submenu nav ul li a{
+    display: block;
+  }
+}
+@media only screen and (min-width: 1300px) {
+
+}
+
+
+.submenu {
+  display: block;
+    grid-row:1;
+    grid-column: 1/span 3;
+    width:100%;
+    height: auto;
+    padding-top:auto;
+    }
+
+.submenu nav {
+    background-color:rgba(0, 0, 0, 0.6);
+    width: 100%;
+    z-index: 1;
+  }    
+
+
+  .submenu nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .submenu nav ul input#search{
+    width: 100%;
+  }
+  
+  .submenu nav ul form{
+    width: 100%;
+  }
+  .submenu nav ul li a:hover {
+    color:var(--maincolor);
+  }
+    
+    .submenu nav ul li {
+      position: relative;
+    }
+    .submenu nav ul li#lastli {
+      width: 100%;
+
+    }
+    
+    .submenu nav ul li a {
+      display: none;
+      color: #fff;
+      text-decoration: none;
+    }
+    .submenu nav ul.dropdown-menu li a:hover {
+      font-size: 24px;
+      color:var(--maincolor);
+
+    }
+    .submenu nav ul li ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      /* background-color: black; */
+      background-color:rgba(0, 0, 0, 0.6);  
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    }
+    
+    .submenu nav ul li:hover ul {
+      display: flex;
+    }
+    
+    .submenu nav ul li ul li a {
+      width: 200px;
+    }
+  
+    .submenu nav ul li{
+      display: flex;
+      align-items: center;
+    }
+  
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      flex-direction: column;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+      transform: translateY(0); /* Position initiale en dehors de l'écran */
+      transition: transform .6s ease-out; /* Transition pour l'effet de glissement */
+      max-height: 500px; /* Hauteur maximale des sous-menus */
+      border-radius: 2%;
+    }
+    
+    .show {
+      transform: translateY(0);  /* Position normale */
+  }
+    
+    .dropdown-menu.show {
+      transform: translateY(0);  /* Position normale */
+    }
